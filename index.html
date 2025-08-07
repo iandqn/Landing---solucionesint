@@ -1,509 +1,161 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta name="facebook-domain-verification" content="rol7ytv18eu6iygjdg1l689jhw1mpa" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L7GCBT76BZ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creamos tu Usuario</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 
-      gtag('config', 'G-L7GCBT76BZ');
-    </script>
+    <!-- Meta Pixel Code -->
     <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1152877239075233');
-        fbq('track', 'PageView');
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1152877239075233'); // IMPORTANTE: Reemplaza con tu ID de Píxel
+    fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1152877239075233&ev=PageView&noscript=1"
     /></noscript>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var whatsappButtons = document.querySelectorAll('.whatsapp-cta-button'); 
-
-            whatsappButtons.forEach(function(button) {
-              if (button) {
-                button.addEventListener('click', function() {
-                  if (typeof fbq === 'function') {
-                    fbq('track', 'Contact', {
-                      content_name: 'WhatsApp Contact',
-                      content_category: 'Botón'
-                    });
-                    console.log('Meta Pixel: Evento Lead disparado por clic en WhatsApp.');
-                  } else {
-                    console.warn('Meta Pixel no cargado. No se pudo disparar el evento Lead.');
-                  }
-                });
-              }
-            });
-          });
-    </script>
-<script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '2097385597441728');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=2097385597441728&ev=PageView&noscript=1"
-    /></noscript>
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conecta con Nosotros | Plataforma Moderna</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- End Meta Pixel Code -->
+    
     <style>
-        :root {
-            --primary-bg: #F8F8F8; /* Fondo claro principal */
-            --secondary-bg: #FFFFFF; /* Fondo para tarjetas, aún más claro */
-            --accent-color: #6A0DAD; /* Púrpura vibrante como color principal de acento */
-            --accent-hover: #5A0CA0; /* Púrpura más oscuro para hover */
-            --text-dark: #2C3E50; /* Gris azulado oscuro para el texto */
-            --text-light: #F8F8F8; /* Para texto sobre el color de acento */
-            --border-light: #E0E0E0; /* Borde sutil */
-            --shadow-light: rgba(0, 0, 0, 0.08); /* Sombra suave */
-            --shadow-accent: rgba(106, 13, 173, 0.4); /* Sombra del acento */
-        }
-
+        /* Estilo para la fuente personalizada y el fondo */
         body {
             font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--primary-bg);
-            color: var(--text-dark);
-            line-height: 1.6;
-            scroll-behavior: smooth;
+            background: radial-gradient(circle, #4c1d95, #2e1065, #1e1b4b);
+            overflow-x: hidden; /* Evita el desbordamiento horizontal */
         }
 
-        .container {
-            max-width: 900px; /* Un poco más estrecho para móvil */
-            margin: 0 auto;
-            padding: 20px;
-            box-sizing: border-box;
+        /* Clase para la fuente del título */
+        .font-lilita {
+            font-family: 'Lilita One', cursive;
         }
 
-        /* --- Header (minimalista, centrado y con logo más discreto) --- */
-        .header-fixed {
-            background-color: var(--secondary-bg);
-            padding: 15px 20px;
-            display: flex;
-            justify-content: center; /* Centra los elementos */
-            align-items: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 8px var(--shadow-light);
-            border-bottom: 2px solid var(--accent-color);
-        }
-
-        .header-fixed .site-logo {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.4em; /* Más pequeño */
-            font-weight: 700;
-            color: var(--accent-color); /* Color de acento */
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            display: flex;
-            align-items: center;
-            margin-right: 0; /* No margin-right para centrar */
-        }
-
-        .header-fixed .site-logo i {
-            color: var(--accent-color);
-            margin-right: 6px;
-            font-size: 1.0em;
+        /* Estilo para el contorno del texto */
+        .text-stroke {
+            -webkit-text-stroke: 2px #a78bfa; /* Para navegadores WebKit */
+            text-shadow: 
+                3px 3px 0 #1e1b4b,
+               -1px -1px 0 #1e1b4b,  
+                1px -1px 0 #1e1b4b,
+               -1px  1px 0 #1e1b4b,
+                1px  1px 0 #1e1b4b;
         }
         
-        /* Ocultar el botón pequeño del header en desktop y mostrar solo en mobile */
-        .header-fixed .contact-button-small {
-            display: none; 
+        /* Animación para las monedas */
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); opacity: 1; }
+            50% { transform: translateY(-25px) rotate(180deg); opacity: 0.8; }
+            100% { transform: translateY(0px) rotate(360deg); opacity: 1; }
         }
 
-        main {
-            padding-top: 70px; /* Espacio para el header fijo */
-        }
-
-        /* --- Hero Section (Más limpia, foco en el mensaje y CTA) --- */
-        .hero-section {
-            background: linear-gradient(135deg, var(--primary-bg) 0%, #E8E8E8 100%);
-            padding: 60px 0; /* Menos padding vertical para compacto */
-            text-align: center;
-            color: var(--text-dark);
-            animation: fadeIn 1s ease-out;
-            border-bottom: 3px solid var(--accent-color);
-        }
-
-        .hero-section h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.8em; /* Más pequeño para móvil */
-            margin-bottom: 10px;
-            font-weight: 700;
-            color: var(--accent-color);
-            line-height: 1.2;
-        }
-
-        .hero-section p {
-            font-size: 1.2em; /* Más pequeño */
-            margin-top: 0;
-            font-weight: 400;
-            margin-bottom: 30px;
-            color: var(--text-dark);
-        }
-
-        .main-cta-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background-color: var(--accent-color);
-            color: var(--text-light);
-            padding: 15px 30px; /* Más compacto */
-            border-radius: 8px; /* Menos redondeado */
-            text-decoration: none;
-            font-size: 1.5em; /* Más pequeño */
-            font-weight: 600;
-            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 10px var(--shadow-accent);
-            text-transform: uppercase;
-            border: none;
-        }
-
-        .main-cta-button:hover {
-            background-color: var(--accent-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px var(--shadow-accent);
-        }
-
-        /* --- Section Styling (Más espaciado y limpio) --- */
-        .content-section {
-            padding: 50px 0; /* Menos padding vertical */
-            text-align: center;
-            background-color: var(--primary-bg);
-            border-bottom: 1px solid var(--border-light);
-            animation: fadeInOnScroll 0.8s ease-out forwards;
-            animation-timeline: view();
-            animation-range: entry 0% cover 20%;
-        }
-        .content-section:last-of-type {
-            border-bottom: none;
-        }
-
-        .content-section h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2em; /* Más pequeño */
-            color: var(--accent-color);
-            margin-bottom: 35px;
-            font-weight: 700;
-        }
-
-        /* --- Feature Grid (Vertical y más simple para móvil) --- */
-        .feature-grid {
-            display: flex;
-            flex-direction: column; /* Siempre en columna para móvil */
-            gap: 25px; /* Menos espacio */
-            margin-top: 30px;
-            align-items: center; /* Centra los items */
-        }
-
-        .feature-item {
-            background-color: var(--secondary-bg);
-            padding: 25px; /* Más compacto */
-            border-radius: 8px;
-            box-shadow: 0 3px 8px var(--shadow-light);
-            max-width: 350px; /* Ancho fijo para móvil */
-            width: 100%; /* Asegura que ocupe el 100% de su max-width */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            color: var(--text-dark);
-            text-align: center;
-            border: 1px solid var(--border-light); /* Borde sutil */
-        }
-
-        .feature-item:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 5px 10px var(--shadow-light);
-        }
-
-        .feature-item i {
-            font-size: 2.5em; /* Más pequeño */
-            color: var(--accent-color);
-            margin-bottom: 12px;
-        }
-
-        .feature-item h3 {
-            font-family: 'Inter', sans-serif;
-            font-size: 1.2em;
-            color: var(--text-dark);
-            margin-bottom: 8px;
-            font-weight: 600;
-        }
-
-        .feature-item p {
-            font-size: 0.95em;
-            color: var(--text-dark);
-            margin: 0;
-        }
-
-        /* --- Statistics/Testimonials (Cards individuales y limpias) --- */
-        .stats-section .stat-card {
-            background-color: var(--secondary-bg);
-            padding: 25px 30px; /* Más compacto */
-            border-radius: 8px;
-            box-shadow: 0 3px 8px var(--shadow-light);
-            margin-bottom: 25px; /* Espacio entre ellas */
-            color: var(--text-dark);
-            border: 1px solid var(--border-light);
-            max-width: 350px; /* Ancho fijo para móvil */
-            width: 100%;
-            margin-left: auto; /* Centrar */
-            margin-right: auto; /* Centrar */
-        }
-
-        .stats-section .stat-card h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.2em; /* Más pequeño */
-            color: var(--accent-color);
-            margin-bottom: 6px;
-            font-weight: 700;
-        }
-
-        .stats-section .stat-card p {
-            font-size: 1em;
-            margin-top: 0;
-            color: var(--text-dark);
-        }
-
-        .stats-section .stat-card .rating-stars {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-
-        .stats-section .stat-card .rating-stars .fa-star,
-        .stats-section .stat-card .rating-stars .fa-star-half-alt {
-            color: gold;
-            margin: 0 1px;
-        }
-
-        /* --- Call to Action (Bono - Diseño simple y directo) --- */
-        .call-to-action .promo-box {
-            background-color: var(--accent-color); /* Fondo del color de acento */
-            padding: 30px; /* Más compacto */
-            border-radius: 10px;
-            box-shadow: 0 5px 15px var(--shadow-accent);
-            max-width: 350px; /* Ancho fijo para móvil */
-            margin: 0 auto;
-            text-align: center;
-            color: var(--text-light); /* Texto claro sobre el fondo de acento */
-            border: none;
-        }
-        
-        .call-to-action .promo-box h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.8em;
-            color: var(--text-light);
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-
-        .call-to-action .promo-box p {
-            font-size: 1.05em;
-            margin-bottom: 25px;
-            color: var(--text-light);
-        }
-
-        .call-to-action .promo-box .action-button {
-            background-color: var(--secondary-bg); /* Botón claro sobre fondo oscuro */
-            color: var(--accent-color); /* Texto del botón con color de acento */
-            padding: 12px 25px; /* Más compacto */
-            border-radius: 6px;
-            text-decoration: none;
-            font-size: 1.1em;
-            font-weight: 600;
-            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            border: none;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        .call-to-action .promo-box .action-button:hover {
-            background-color: var(--border-light);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-        }
-
-        /* --- Footer (Minimalista) --- */
-        footer {
-            background-color: var(--secondary-bg);
-            color: var(--text-dark);
-            text-align: center;
-            padding: 25px 20px; /* Más compacto */
-            font-size: 0.9em;
-            margin-top: 40px;
-            border-top: 1px solid var(--border-light);
-        }
-
-        /* --- Keyframe Animations (más sutiles) --- */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(15px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeInOnScroll {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* --- Responsive Design --- */
-        /* Media query específico para mostrar/ocultar elementos en móvil */
-        @media (max-width: 768px) {
-            .header-fixed {
-                justify-content: space-between; /* Alinea logo a la izquierda, botón a la derecha */
-            }
-            .header-fixed .contact-button-small {
-                display: flex; /* Mostrar el botón pequeño en el header para móvil */
-                padding: 8px 15px; /* Más compacto para móvil */
-                font-size: 0.85em;
-            }
-            /* Ocultar el logo en el header en pantallas muy pequeñas si es necesario, 
-               o reducir su tamaño si el botón hace que choque. */
-            .header-fixed .site-logo {
-                font-size: 1.2em; /* Ajustar el tamaño del logo para pantallas pequeñas */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .header-fixed { padding: 10px; }
-            .header-fixed .site-logo { font-size: 1.1em; }
-            .header-fixed .contact-button-small { padding: 6px 12px; font-size: 0.75em; }
-            main { padding-top: 60px; }
-
-            .hero-section { padding: 40px 0; }
-            .hero-section h1 { font-size: 2.2em; }
-            .hero-section p { font-size: 1em; }
-            .main-cta-button { font-size: 1.2em; padding: 12px 25px; }
-            
-            .content-section { padding: 35px 0; }
-            .content-section h2 { font-size: 1.7em; }
-
-            .feature-item,
-            .stats-section .stat-card,
-            .call-to-action .promo-box {
-                max-width: 95%; /* Un poco más de margen en los lados */
-            }
-
-            .stats-section .stat-card h3 { font-size: 2em; }
-            .stats-section .stat-card p { font-size: 0.9em; }
-
-            .call-to-action .promo-box h3 { font-size: 1.5em; }
-            .call-to-action .promo-box p { font-size: 0.95em; }
-            .call-to-action .promo-box .action-button { font-size: 0.95em; padding: 10px 20px; }
+        .coin {
+            position: absolute;
+            font-size: 3rem; /* Tamaño de las monedas */
+            animation: float 6s ease-in-out infinite;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
         }
     </style>
 </head>
-<body>
+<body class="text-white min-h-screen flex items-center justify-center p-4 relative">
 
-    <div class="header-fixed">
-        <div class="site-logo"><i class="fas fa-hand-sparkles"></i> CONFIANZA PRO</div>
-        <a href="https://wa.me/541127412158?text=Hola%21%20Me%20dar%C3%ADas%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="contact-button-small whatsapp-cta-button" id="whatsappFixedCta">
-            <i class="fab fa-whatsapp"></i> Chat
-        </a>
+    <!-- Contenedor de monedas para el fondo -->
+    <div>
+        <span class="coin" style="top: 10%; left: 15%; animation-delay: 0s;">💰</span>
+        <span class="coin" style="top: 20%; right: 10%; animation-delay: 1.5s; font-size: 2.5rem;">💰</span>
+        <span class="coin" style="top: 60%; left: 5%; animation-delay: 3s;">💰</span>
+        <span class="coin" style="top: 80%; right: 20%; animation-delay: 4.5s; font-size: 3.5rem;">💰</span>
+        <span class="coin" style="bottom: 10%; left: 30%; animation-delay: 2s;">💰</span>
+        <span class="coin" style="bottom: 5%; right: 5%; animation-delay: 0.5s; font-size: 2rem;">💰</span>
     </div>
 
-    <main>
-        <section class="hero-section">
-            <div class="container">
-                <h1>Tu Puente al Éxito | Plataforma Verificada</h1>
-                <p>Simple, rápido y seguro. Empieza a ganar hoy mismo.</p>
-                <a href="https://wa.me/541127412158?text=Hola%21%20Me%20dar%C3%ADas%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="main-cta-button whatsapp-cta-button" id="whatsappHeroCta">
-                    <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
-                </a>
-            </div>
-        </section>
+    <main class="text-center z-10 w-full max-w-lg mx-auto">
+        <!-- Título principal -->
+        <h1 class="font-lilita text-5xl md:text-7xl leading-tight text-stroke text-white uppercase">
+            ¡Creamos tu usuario!
+        </h1>
+        <h2 class="font-lilita text-2xl md:text-3xl text-violet-300 uppercase -mt-2 md:-mt-4">
+            Antes de que termine el tiempo
+        </h2>
 
-        <section class="content-section features">
-            <div class="container">
-                <h2>Por Qué Elegirnos</h2>
-                <div class="feature-grid">
-                    <div class="feature-item">
-                        <i class="fas fa-bolt"></i>
-                        <h3>Rapidez Inigualable</h3>
-                        <p>Pagos y procesos ultra-rápidos, para que no pierdas tiempo.</p>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-comments"></i>
-                        <h3>Atención Personalizada</h3>
-                        <p>Estamos aquí 24/7 para resolver tus dudas y ayudarte.</p>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-fingerprint"></i>
-                        <h3>Datos Seguros</h3>
-                        <p>Tu privacidad es nuestra prioridad. Cero información personal solicitada.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Contador -->
+        <div id="countdown" class="bg-green-500 text-white font-bold text-4xl md:text-5xl rounded-2xl py-3 px-8 my-6 inline-block shadow-lg">
+            00:59
+        </div>
 
-        <section class="content-section stats-section">
-            <div class="container">
-                <h2>Resultados que Hablan por Sí Mismos</h2>
-                <div class="stat-card">
-                    <h3>+7.000</h3>
-                    <p>Usuarios satisfechos generando ganancias.</p>
-                </div>
-                <div class="stat-card">
-                    <div class="rating-stars">
-                        <span>4.9/5</span>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p>Calificación promedio en nuestras encuestas.</p>
-                </div>
-            </div>
-        </section>
+        <!-- Botón de WhatsApp con evento de Píxel y nuevo ícono -->
+        <a href="https://wa.me/5491127412158?text=Hola%21%20Quiero%20m%C3%A1s%20informaci%C3%B3n.%20Mi%20nombre%20es%3A" 
+           target="_blank" 
+           onclick="fbq('track', 'Contact');"
+           class="bg-green-500 hover:bg-green-600 transition-colors text-white font-bold text-xl md:text-2xl rounded-2xl py-4 px-8 my-4 flex items-center justify-center w-full max-w-sm mx-auto shadow-lg">
+            <svg class="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.932 7.932 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+            </svg>
+            ¡Hablanos por WhatsApp!
+        </a>
 
-        <section class="content-section call-to-action">
-            <div class="container">
-                <h2>Aprovecha Nuestro Regalo Exclusivo</h2>
-                <div class="promo-box">
-                    <h3>Bono de Bienvenida Activo</h3>
-                    <p>Contacta ahora vía WhatsApp y realiza tu carga mínima para recibir un BONO.</p>
-                    <a href="https://wa.me/541127412158?text=Hola%21%20Me%20dar%C3%ADas%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="action-button whatsapp-cta-button" id="whatsappPromoCta">
-                        <i class="fab fa-whatsapp"></i> Quiero mi usuario
-                    </a>
-                </div>
-            </div>
-        </section>
+        <!-- Mínimo de carga -->
+        <div class="my-8">
+            <p class="text-lg uppercase text-violet-300">Mínimo de carga</p>
+            <p class="font-bold text-5xl text-yellow-300 tracking-wider">$1000</p>
+        </div>
+
+        <!-- Bono Adicional -->
+        <div class="my-6 bg-yellow-400 text-purple-900 p-4 rounded-xl shadow-lg transform rotate-[-3deg] max-w-sm mx-auto">
+            <p class="text-xl uppercase font-bold">¡Con tu carga te llevas</p>
+            <p class="font-lilita text-6xl tracking-wider text-white" style="-webkit-text-stroke: 2px #4c1d95;">$1000</p>
+            <p class="text-2xl uppercase font-bold">de bono!</p>
+        </div>
+
+        <!-- Imagen del teléfono -->
+        <div class="mt-12 flex justify-center">
+            <img src="https://assets.materialup.com/uploads/023c5847-d2b3-4a7b-9749-2e0a57965435/preview.png" 
+                 alt="Demostración de la aplicación en un teléfono" 
+                 class="w-full max-w-xs h-auto object-contain drop-shadow-2xl">
+        </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Plataforma Confianza Pro. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+    <script>
+        // --- Lógica del Contador ---
+        const countdownElement = document.getElementById('countdown');
+        let timeInSeconds = 59; // Iniciar en 59 segundos
 
+        function updateCountdown() {
+            const minutes = Math.floor(timeInSeconds / 60);
+            let seconds = timeInSeconds % 60;
+
+            // Añadir un cero a la izquierda si los segundos son menores a 10
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+
+            countdownElement.textContent = `0${minutes}:${seconds}`;
+
+            if (timeInSeconds > 0) {
+                timeInSeconds--;
+            } else {
+                clearInterval(countdownInterval);
+                countdownElement.textContent = "¡Tiempo!";
+            }
+        }
+
+        // Iniciar el contador
+        const countdownInterval = setInterval(updateCountdown, 1000);
+        
+        // Ejecutar una vez al inicio para que no haya un segundo de retraso
+        updateCountdown();
+    </script>
 </body>
 </html>
+
